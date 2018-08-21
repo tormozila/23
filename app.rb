@@ -12,7 +12,7 @@ get '/start' do
 
   @title = "Users list"
   @logfile = File.open './public/users.txt', 'r'
-
+  @master_arr = ["John", "Bill", "Jessie", "Martin"]
   erb :showu
 
 end

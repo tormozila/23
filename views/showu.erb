@@ -3,8 +3,16 @@
 	<%= @title %>
 
 </h1>
-<table class="table table-striped">
-<h2>Text file:</h2>
+
+
+
+<select class="form-control" name="master_">
+    <option><%= @master_arr[0].to_s %></option>
+    <option><%= @master_arr[1].to_s %></option>
+    <option><%= @master_arr[2].to_s %></option>
+    <option><%= @master_arr[3].to_s %></option>
+</select>
+
 <% @logfile.each_line do |line| %>
   <table class="table table-striped">
    <%= line %> 
