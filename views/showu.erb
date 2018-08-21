@@ -6,14 +6,14 @@
 
 
 
-<select class="form-control" name="master_">
-    <option><%= @master_arr[0].to_s %></option>
-    <option><%= @master_arr[1].to_s %></option>
-    <option><%= @master_arr[2].to_s %></option>
-    <option><%= @master_arr[3].to_s %></option>
+<select class="form-control" name="master_arr">
+    <option><%= @arr1[0].to_s %></option>
+    <option><%= @arr1[1].to_s %></option>
+    <option><%= @arr1[2].to_s %></option>
+    <option><%= @arr1[3].to_s %></option>
 </select>
 
-<% @logfile.each_line do |line| %>
+<% @logfile1.each_line do |line| %>
   <table class="table table-striped">
    <%= line %> 
    </table>
