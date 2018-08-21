@@ -26,9 +26,10 @@ post '/visit' do
   @name_ = params[:name_]
   @cell_number = params[:cell_]
   @date_time = params[:date_]
+  @master_ = params[:master_]
 
   f = File.open './public/users.txt', 'a'
-  f.write "\n user: #{@name_.capitalize}; cell: #{@cell_number}; date: #{@date_time}"
+  f.write "\n user: #{@name_.capitalize}; cell: #{@cell_number}; date: #{@date_time}; master: #{@master_}"
   f.close
   erb :visit
 
